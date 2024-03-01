@@ -1,5 +1,6 @@
 package com.cis.librarymanagementsystem.controller;
 
+import com.cis.librarymanagementsystem.entity.LibraryMember;
 import com.cis.librarymanagementsystem.dao.Member;
 import com.cis.librarymanagementsystem.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ public class MemberController {
     private MemberService memberService;
 
     @RequestMapping(value = "/member", method = RequestMethod.POST)
-    public Member createdMember(@RequestBody Member member) {
+    public LibraryMember createdMember(@RequestBody Member member) {
         return memberService.createMember(member);
     }
 
