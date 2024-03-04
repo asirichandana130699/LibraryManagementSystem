@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Library</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Books</h2>
+        <p>View and manage library books.</p>
+        <button class="add-button" onclick="location.href='add_book.html'">Add Book</button>
+        <div class="book-details">
+            <h3>All Books:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Book details will be displayed here -->
+                    <tr>
+                        <td>1</td>
+                        <td>To Kill a Mockingbird</td>
+                        <td>Harper Lee</td>
+                        <td>Classic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
